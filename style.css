@@ -2,3 +2,7 @@
     display: none;
     color: orange;
 }
+#warning2 {
+    display: none;
+    color: rgb(255, 0, 0);
+}
