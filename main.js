@@ -1,11 +1,12 @@
 const messageElem = document.getElementById("warning");
 const messageElem2 = document.getElementById("warning2");
+const input = document.getElementById("input");
 
-window.addEventListener("keyup", (event) => {
-  event.getModifierState("CapsLock")
+window.addEventListener("keyup", (e) => {
+  e.getModifierState("CapsLock")
     ? (messageElem.style.display = "block")
     : (messageElem.style.display = "none");
-  event.getModifierState("NumLock")
+  e.getModifierState("NumLock")
     ? (messageElem2.style.display = "block")
     : (messageElem2.style.display = "none");
 });
